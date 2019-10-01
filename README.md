@@ -8,28 +8,25 @@ Corda IOU application leverating `Distributed-Ledger-Technology`
 * JDK 1.8 latest version
 
 ### Running the tests
-* Kotlin: Select `Kotlin - Unit tests` from the dropdown run configuration menu, and click the green play button.
-* Java: Select `Java - Unit tests` from the dropdown run configuration menu, and click the green play button.
 * When running flow tests you must add the following to your run / debug configuration in the VM options field. This enables us to use
 * Quasar - a library that provides high-performance, lightweight threads.
 * "-javaagent: /PATH_TO_FILE_FROM_ROOT_DIR/quasar.jar"
 
 # Code Files
 
-### Java
-State:
+## State
 
 * Code: `java-source/src/main/java/net/corda/training/state/IOUState.java`
 * Tests: `java-source/src/test/java/net/corda/training/state/IOUStateTests.java`
 
-Contract:
+## Contract
 
 * Code: `java-source/src/main/java/net/corda/training/contract/IOUContract.java`
 * Issue Tests: `java-source/src/test/java/net/corda/training/contract/IOUIssueTests.java`
 * Transfer Tests: `java-source/src/test/java/net/corda/training/contract/IOUIssueTests.java`
 * Settle Tests: `java-source/src/test/java/net/corda/training/contract/IOUIssueTests.java`
 
-Flow:
+## Flow
 
 * Issue code: `java-source/src/main/java/net/corda/training/flow/IOUIssueFlow.java`
 * Issue tests: `java-source/src/test/java/net/corda/training/flow/IOUIssueFlowTests.java`
@@ -48,7 +45,6 @@ The code in the following files was already added:
 
 # Running the CorDapp
 
-### Java
 * Terminal: Navigate to the root project folder and run `./gradlew java-source:deployNodes`, followed by 
 `./java-source/build/node/runnodes`
 
